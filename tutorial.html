@@ -176,7 +176,7 @@ li a:hover {
 	<div class="box">
 		<div>
 			<p><b>2. Select your target feature</b></p>
-			<p>Select "Survived" as the feature you want to predict, using the dropdown menu or by clicking on the table. This is a 1 if the passenger survived, and 0 if the did not. Set the feature type as categoric, as we want to classify passengers as having survived or not.<p/>
+			<p>Select "Survived" as the feature you want to predict, using the dropdown menu or by clicking on the table. This is a 1 if the passenger survived, and 0 if not. Set the feature type as categoric, as we want to classify passengers as having survived or not.<p/>
 		</div>
 
 
@@ -189,7 +189,7 @@ li a:hover {
 	<div class="box">
 		<div>
 			<p><b>3. Choose how to score models</b></p>
-			<p>We will rank models based on their accuracy. The advanced options allows you to choose the method for scoring. Since we are interested in building a predictive model, we want to see how well our model will perform on new data. By default we will use 5-fold cross validation, but for larger datasets using Train-Test splits is sufficient. In addition, we holdout some of the data as a final check on model performance.<p/>
+			<p>We will rank models based on their accuracy. The advanced options allow you to choose the method for scoring. Since we are interested in building a predictive model, we want to see how well our model will perform on new data. By default, we use 5-fold cross validation, but for larger datasets using Train-Test splits is sufficient. In addition, we holdout some of the data as a final check on model performance.<p/>
 		</div>
 
 		<div>
@@ -209,7 +209,7 @@ li a:hover {
 	<div class="box">
 		<div>
 			<p><b>4. Looking at trends</b></p>
-			<p>Click on a feature in the table to see how it influences the to proportion of passengers that survived. For numeric features, data is binned into a histogram, then the mean value or proportion is plotted. For fare it looks like passengers that paid more were more likely to survive.</p>
+			<p>Click on a feature in the table to see how it influences the proportion of passengers that survived. For numeric features, data is binned into a histogram, then the mean value or proportion is plotted. For fare it looks like passengers that paid more were more likely to survive.</p>
 		</div>
 
 			<div>
@@ -221,8 +221,8 @@ li a:hover {
 	<div class="box">
 		<div>
 			<p><b>5. Select the features to use</b></p>
-			<p>Next we need to choose the features our models will use to predict survival. Most machine learning models have automatic feature selection so we should keep in as many as possible, but in some cases we can't use features, for example, it may be illegal to use sex or ethnicity to price insurance premiums. In this case, we will remove "PassengerID" as it is just a label.</p>
-			<p>We will also change "Pclass" to be categoric, as it is a category of passenger tickets, and "Name" to text. Our models make new features from text variables by counting the occurence of each word, so we can automatically extract the passengers title and surname.</p>
+			<p>Next, we need to choose the features our models will use to predict survival. Most machine learning models have automatic feature selection so we should keep in as many as possible, but in some cases we can't use features, for example, it may be illegal to use sex or ethnicity to price insurance premiums. In this case, we will remove "PassengerID" as it is just a label.</p>
+			<p>We will also change "Pclass" to be categoric, as it is a category of passenger tickets, and "Name" to text. Our models make new features from text variables by counting the occurrence of each word, so we can automatically extract the passengers title and surname.</p>
 		</div>
 
 			<div>
@@ -253,8 +253,8 @@ li a:hover {
 	<div class="box">
 		<div>
 			<p><b>7. Train the models</b></p>
-			<p>To train the models, click the train button in the tables or the train all button below. The training screen shows the progress of training over time, and is used to extend model train time.</p>
-			<p>Granite AI optimises the model parameters, such as decision tree depth, using an exploration vs exploitation scheme. Each dot in the trainined plot represents the results of a new parameter run.</p>
+			<p>To train the models, click the train button in the tables or the train all button below. The training screen shows the progress of training over time and is used to extend model train time.</p>
+			<p>Granite AI optimises the model parameters, such as decision tree depth, using an exploration vs exploitation scheme. Each dot in the training plot represents the results of a new parameter run.</p>
 		</div>
 
 			<div>
@@ -278,7 +278,7 @@ li a:hover {
 	<div class="box">
 		<div>
 			<p><b>9. Feature dependence</b></p>
-			<p>Using the model we are able to remove the effects of correlated variables. By clicking on each feature we see how well our model is able to capture the trend.</p>
+			<p>Using the model, we are able to remove the effects of correlated variables. By clicking on each feature, we see how well our model is able to capture the trend.</p>
 			<p>The partial plot shows how the prediction varies with our feature when all other features are at the mean value. In this case, a passenger with a higher fare has a lower chance of being in category 0, so more likely to survive.</p>
 		</div>
 
@@ -291,7 +291,7 @@ li a:hover {
 	<div class="box">
 		<div>
 			<p><b>10. ROC curve</b></p>
-			<p>The receiver operating characteristic curve shows the true positive rate against the false positive rate, for varying probability thresholds. The area under the curve (AUC) is a measure of the models prevision, with a perfect score having an area of 1.</p>
+			<p>The receiver operating characteristic curve shows the true positive rate against the false positive rate, for varying probability thresholds. The area under the curve (AUC) is a measure of precision, with a perfect score having an area of 1.</p>
 		</div>
 
 			<div>
@@ -303,7 +303,7 @@ li a:hover {
 	<div class="box">
 		<div>
 			<p><b>11. Confusion matrix</b></p>
-			<p>The confusion matrix shows the count of predicted classes against actual classes. It is useful for seeing which classes erros are occuring in.</p>
+			<p>The confusion matrix shows the count of predicted classes against actual classes. It is useful for seeing which classes errors are occurring in.</p>
 		</div>
 
 			<div>
@@ -323,7 +323,7 @@ li a:hover {
 	<div class="box">
 		<div>
 			<p><b>12. Interactive mode</b></p>
-			<p>The interactive mode lets you input new features and see the model predictions. Use this to get an understanding of the features driving the model, and get real time predictions.</p>
+			<p>The interactive mode lets you input new features and see the model predictions. Use this to get an understanding of the features driving the model and get real time predictions.</p>
 		</div>
 
 			<div>
