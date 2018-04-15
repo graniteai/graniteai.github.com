@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+    box-sizing: border-box;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    line-height: 24px;
+}
+
+body {
+    margin: 0;
+    color: rgb(64,64,64);
+}
+
+.header {
+	text-align: center;
+    padding: 32px;
+    color: black;
+}
+
+.box{
+	display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.box-header {
+	text-align: center;
+    padding: 24px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.column{
+    flex: 50%;
+    max-width: 50%;
+    border: 0px 0px;
+    padding: 8px 8px;
+    vertical-align: middle;
+}
+
+.borderline{
+	height: 1px;
+	background: rgb(213,213,213);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+nav{
+	text-align: center;
+	background-color: rgb(64,64,64);
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+/* Navigation bar styling */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(64,64,64);
+    
+    top: 0;
+    display: inline-block;
+}
+
+
+/* Navigation button styling */
+li {
+    float: left;
+    font-weight: bolder;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgb(255,136,43);
+}
+
+
+/* Slideshows */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  padding: 16px 16px;
+}
+
+.dataSlides, .modelSlides {display: none}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .9} 
+  to {opacity: 1}
+}
+
+
+</style>
+
+<body>
+
+<div style="background:url('images/background.png'); background-repeat: no-repeat; background-size: 100% auto; min-width: 900px">
+	<div class="header">
+		<h1 style="font-size: 64px; color: white">Granite AI</h1>
+		<h2 style="font-size: 24px; color: white">Automated machine learning and data mining</h2>
+	</div>
+</div>
+
+<nav>
+	<ul>
+		<li><a href="#data">Data analysis</a></li>
+		<li><a href="#ml">Machine learning</a></li>
+		<li><a href="#features">Features</a></li>
+		<li><a href="#download">Download</a></li>
+		<li><a href="tutorial.html">Tutorial</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+</nav>
+
+</body>
+
+<body style="background: white;">
+
+<div style="background: rgb(239,239,239)"  id="data">
+<div class="box-header" style="color:rgb(59,104,185);" id="data">
+	Visualize the trends driving your business.
+</div>
+<div class="box">
+	<div class="column">
+		<p><b>Power your decision making with data.</b></p>
+		<p>Quickly see corellations and patterns in your data. Granite AI can handle numeric, categoric, and text based data.</p>
+		<p><b>Get new insights with machine learning.</b></p>
+		<p>Use machine learning to get the signal in the noise and find the most important features driving your business. <p/>
+	</div>
+
+	<div class="column">
+		<div class="slideshow-container">
+			<div class="dataSlides fade">
+				<img src="images/tutorial3.png" style="width:100%">
+			</div>
+
+			<div class="dataSlides fade">
+				<img src="images/tutorial5.png" style="width:100%">
+			</div>
+
+			<div class="dataSlides fade">
+				<img src="images/tutorial6.png" style="width:100%">
+			</div>
+		</div>
+	</div>
+	
+
+</div>
+
+
+<div class="box-header" style="color:rgb(255,136,43);"  id="ml">
+			Learn from the past. Predict the future.
+</div>
+<div class="box">
+	<div class="column">
+		<div class="slideshow-container">
+			<div class="modelSlides fade">
+				<img src="images/tutorial9.png" style="width:100%">
+			</div>
+
+			<div class="modelSlides fade">
+				<img src="images/tutorial11.png" style="width:100%">
+			</div>
+
+			<div class="modelSlides fade">
+				<img src="images/tutorial12.png" style="width:100%">
+			</div>
+		</div>
+	</div>
+
+	<div class="column">
+		<p><b>Get started with machine learning.</b></p>
+		<p>Train and use state of the art machine learning algorithms with the push of a button. Granite AI automatically processes the data, trains models using cutting edge optimisation techniques, and validates model accuracy.</p>
+		<p><b>Boost your business with artifical intelligence.</b></p>
+		<p>Use predictive modelling to get new insights into data, predict future outcomes, and automate manual processes.</p>
+	</div>
+</div>
+
+</div>
+
+<div class="borderline"></div>
+
+<div style="background: rgb(255,255,255)"  id="features">
+	<div class="box-header" style="color:rgb(244,91,105);">
+		All the features you would expect.
+	</div>
+	<div class="box">
+		<div class="column">
+			<p><b>Regression and classification</b></p>
+			<p>Predict values, classes, or probabilities with AI to automate tasks and boost business forecasting.</p>
+		</div>
+		<div class="column">
+			<p><b>Model validation</b></p>
+			<p>Use cross validation, or train-test splits, to judge model performance, choosing from a number of metrics.</p>
+		</div>
+	</div>
+	<div class="box">
+		<div class="column">
+			<p><b>Use numeric, categoric, and text data</b></p>
+			<p>Automatically scale numeric data, one-hot-encode categoric data, and get word counts, to use as features for machine learning.</p>
+		</div>
+		<div class="column">
+			<p><b>Model parameter optimisation</b></p>
+			<p>Boost model performance with state of the art optimisation techniques which explore model paramer space to find the best parameters quickly.</p>
+		</div>
+	</div>
+	<div class="box">
+		<div class="column">
+			<p><b>Real time predictions</b></p>
+			<p>Use interactive mode to get real time predictions or to analyse model behaviour.</p>
+		</div>
+		<div class="column">
+			<p><b>Deploy your algorithms</b></p>
+			<p>Save and share the best models to use in your business.</p>
+		</div>
+	</div>
+</div>
+
+<div class="borderline"></div>
+
+<div style="background: rgb(239,239,239)"  id="download">
+	<div class="box-header" style="color:rgb(59,104,185);">
+		Try it now.
+	</div>
+	<div class="box">
+		<div class="column" style="text-align: center">
+			<p><b>Latest version</b></p>
+			<p>0.1.1</p>
+		</div>
+		<div class="column" style="text-align: center">
+			<p>For Windows</p>
+			<a href="modelScreen1.png" download="test" style="color: black;"><p>Download<p></a>
+		</div>
+	</div>
+
+	<div style="text-align: center; padding: 24px">
+		Follow the <a href="tutorial.html" style="color: black;">tutorial</a> for a quick introduction to data science with Granite AI.
+	</div>
+</div>
+
+<div class="borderline"></div>
+
+<div style="background: rgb(64,64,64); color:white"  id="contact">
+	<div class="box-header" style="color:white;">
+		Contact
+	</div>
+	<div class="box">
+		<div class="column">
+			<p><b>Have any questions or comments?</b></p>
+			<p>mike@granite-ai.com</p>
+		</div>
+		<div class="column">
+			<p><b>Granite AI Ltd</b></p>
+			<p>44 Oakwood Park Road<br>
+				London<br>
+				N14 6QA<br>
+				United Kingdom</p>
+			<p>Company No. 11263014</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+
+<script>
+var slideIndex = 1;
+var slideId = ["dataSlides", "modelSlides"]
+showSlides();
+
+function showSlides() {
+
+	var j;
+	for (j = 0; j < slideId.length; j++)
+	{
+	var i;
+	    var slides = document.getElementsByClassName(slideId[j]);
+	    for (i = 0; i < slides.length; i++)
+	    {
+	        slides[i].style.display = "none";
+	    }
+	    
+	    slides[slideIndex-1].style.display = "block";
+	}
+
+	slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+
+	setTimeout(showSlides, 10000); // Change image every 5 seconds
+    
+} 
+</script>
