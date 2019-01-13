@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    line-height: 24px;
+}
+
+body {
+    margin: 0;
+    color: rgb(64,64,64);
+}
+
+.header {
+	text-align: center;
+    padding: 32px;
+    color: black;
+    vertical-align: middle;
+}
+
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.boxreverse{
+	display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box-header {
+	text-align: center;
+    padding: 24px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.column{
+    flex: 50%;
+    max-width: 50%;
+    border: 0px;
+    padding: 16px 16px;
+    vertical-align: middle;
+}
+
+.smallcol{
+	flex: 33%;
+    border: 0px;
+    padding: 64px 32px;
+    vertical-align: middle;
+}
+
+.bigcol{
+	flex: 66%;
+    border: 0px 0px;
+    padding: 64px 32px;
+    vertical-align: middle;
+}
+
+.borderline{
+	height: 1px;
+	background: rgb(213,213,213);
+}
+
+.button{
+	background-color: #f2800d;
+	border: 0px solid white;
+	color: white;
+	padding: 8px 8px;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+.button:hover{
+	background-color: #ffa02d;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 800px) {
+    .box {
+    	flex-direction: column;
+    }
+
+    .boxreverse {
+    	flex-direction: column-reverse;
+    }
+}
+
+
+
+</style>
+
+<body>
+
+<div style="background:url('images/background.png'); background-repeat: no-repeat;">
+
+	<div class="header">
+		<h1 style="font-size: 64px; color: white">Granite AI</h1>
+		<h2 style="font-size: 24px; color: white">Automated machine learning and data visualisation</h2>
+	</div>
+
+	<div class="box">
+		<div class="column" style="text-align: center;">
+			<p style="color: white; font-size: 16px;"><b>Try for free</b></p>
+			<a href="https://github.com/graniteai/GraniteAI/releases/download/v0.1.4/granite_setup.exe" class="button">Download</a>
+		</div>
+
+		<div class="column" style="text-align: center;">
+			<p style="color: white; font-size: 16px;"><b>Latest version</b></p>
+			<p style="color: white; font-size: 16px;">0.1.4</p>
+		</div>
+	</div>
+</div>
+
+<div class="borderline"></div>
+</body>
+
+<body style="background: white;">
+
+<div style="background: rgb(247,247,247)"  id="data">
+<div class="box-header" style="color:rgb(59,104,185);" id="data">
+	Visualise the trends in your data
+</div>
+
+<div class="box">
+	<div class="smallcol">
+		<h2>Power your decision-making with data</h2>
+
+		<div class="borderline"></div>
+
+		<p>Granite AI allows users to explore trends and relationships in their data, enabling them to make informed decisions backed up by data. Spot correlations between two variables, or count the frequency of words in good or bad reviews. Granite AI can handle numeric, categoric, and text-based data, letting you get the most from your data.</p>
+	</div>
+
+	<div class="bigcol">
+		<img src="images/vis1.png" style="width:100%">
+	</div>
+</div>
+
+<div class="boxreverse">
+	<div class="bigcol">
+		<img src="images/vis2.png" style="width:100%">
+	</div>
+
+	<div class="smallcol">
+		<h2>Save time with data analysis</h2>
+
+		<div class="borderline"></div>
+
+		<p> Our visualisation tools make it quick and easy to plot data and get statistics, allowing users to save time handling data, and spend more time gaining insights. With just a few clicks, users can make scatter plots, box plots, count frequencies, and calculate statistics.</p>
+	</div>
+
+	
+</div>
+
+</div>
+
+<div class="borderline"></div>
+<div style="background: rgb(255,255,255)"  id="ml">
+
+<div class="box-header" style="color:rgb(244,91,105);">
+	Automated machine learning
+</div>
+
+<div class="box">
+	<div class="smallcol">
+		<h2>Machine learning made easy</h2>
+
+		<div class="borderline"></div>
+
+		<p>Train state of the art machine learning algorithms with the push of a button. Granite AI uses the latest techniques in automated machine learning to process the data, optimise models, and engineer new features, giving everyone access to the most accurate models without any coding.</p>
+	</div>
+
+	<div class="bigcol">
+		<img src="images/ml1.png" style="width:100%">
+	</div>
+</div>
+
+<div class="boxreverse">
+	<div class="bigcol">
+		<img src="images/ml2.png" style="width:100%">
+	</div>
+
+	<div class="smallcol">
+		<h2>Boost your productivity with predictive models</h2>
+
+		<div class="borderline"></div>
+
+		<p>Predictive models are used to either predict values, or make classifications. Train a model to automatically classify customer feedback into good and bad, and find the ones needing the most attention. Use a regression model to predict the expected losses from an insurance policy. Machine learning can be used in a number of ways to automate manual processes, and get more accurate predictions.</p>
+	</div>
+</div>
+
+<div class="box">
+	<div class="smallcol">
+		<h2>Gain new insights with AI</h2>
+
+		<div class="borderline"></div>
+
+		<p>Granite AI aims to open up the black-box of machine learning, making it easier to understand and allowing users to learn from the models. Find out which features are most important in your dataset, and use feature dependence how they influence others. Use our interactive mode to get real-time predictions and to understand the determining factors in a model's predictions.</p>
+	</div>
+
+	<div class="bigcol">
+		<img src="images/ml3.png" style="width:100%">
+	</div>
+</div>
+
+</div>
+
+<div class="borderline"></div>
+<div style="background: rgb(239,239,239)"  id="download">
+	<div class="box-header" style="color:rgb(255,136,43);">
+		Try Granite AI for free
+	</div>
+
+	<div class="box">
+		<div class="column" style="text-align: center">
+			<p style="font-size: 16px;"><b>For Windows</b></p>
+			<a href="https://github.com/graniteai/GraniteAI/releases/download/v0.1.4/granite_setup.exe" class="button">Download</a>
+		</div>
+
+		<div class="column" style="text-align: center">
+			<p style="font-size: 16px;"><b>Latest version</b></p>
+			<p style="font-size: 16px;">0.1.4</p>
+		</div>
+	</div>
+</div>
+
+<div class="borderline"></div>
+<div style="background: rgb(64,64,64); color:white"  id="contact">
+	<div class="box-header" style="color:white;">
+		Contact
+	</div>
+	<div class="box">
+		<div class="column" style="text-align: center; vertical-align: center;">
+			<p><b>Have any questions or comments?</b></p>
+			<p>mike@granite-ai.com</p>
+		</div>
+		<div class="column" style="text-align: center">
+			<p><b>Granite AI Ltd</b></p>
+			<p>Company No. 11263014</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
